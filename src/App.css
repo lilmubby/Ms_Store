@@ -13,3 +13,27 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+#root{
+  background-color: blue;
+  min-height: 100vh;
+}
+
+div{
+  color: red;
+}
+
+.pry_logo{
+  height: 3rem;
+}
+
+nav ul li a {
+  color: black;
+}
