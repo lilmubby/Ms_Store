@@ -1,10 +1,10 @@
-import { createSlice } from "@reduxjs/toolkit";
-import productArr from "./productArr";
+// import { createSlice } from "@reduxjs/toolkit";
+// import productArr from "./productArr";
 
-const productSlice = createSlice({
-  name: 'product',
-  initialState: productArr,
+// const productSlice = createSlice({
+//   name: 'product',
+//   initialState: productArr,
 
-})
+// })
 
-export default productSlice.reducer;
+// export default productSlice.reducer;

@@ -22,7 +22,7 @@
 
 
 #root{
-  background-color: blue;
+  background-color:  white;
   min-height: 100vh;
 }
 
@@ -36,4 +36,9 @@ div{
 
 nav ul li a {
   color: black;
+}
+
+ul li div img{
+  height: 9em;
+  width: 8.5em;
 }
