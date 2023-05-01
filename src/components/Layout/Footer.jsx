@@ -5,7 +5,7 @@ const Footer = () => {
     <section>
       <ul>
         <li>
-          <img src={logo} alt='logo' />
+          <img src={logo} alt='logo' className='footer_logo'/>
           <span>
             Copyright &copy; 2023.
           </span>
