@@ -10,7 +10,7 @@ const ProductItem = (props) => {
         <div className='product_text'>
           <span className='product_brand' > {props.brand} </span>
           <span className='product_name' > {props.name} </span>
-          <span className="product_price"> {props.price} </span>
+          <span className="product_price"> {`$${props.price}`} </span>
         </div>
       </li>
     </>
