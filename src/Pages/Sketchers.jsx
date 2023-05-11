@@ -7,7 +7,7 @@ import productArr from '../store/productArr';
 const NewBalancePage = () => {
 
   const map = productArr.filter(item => {
-    if (item.brand === 'Adidas') return item
+    if (item.brand === 'sketchers') return item
   });
 
   return (
@@ -16,6 +16,7 @@ const NewBalancePage = () => {
         map.map(item => (
           <ProductItem
           key={item.id}
+          id={item.id}
           name={item.name}
           img={item.imgSrc}
           brand={item.brand}

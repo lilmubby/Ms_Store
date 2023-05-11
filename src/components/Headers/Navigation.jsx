@@ -15,8 +15,8 @@ const pryNav = [
     name: `Puma`
   },
   {
-    link: `new_balance`,
-    name: `New Balance`
+    link: `sketchers`,
+    name: `Sketchers`
   },
 ];
 

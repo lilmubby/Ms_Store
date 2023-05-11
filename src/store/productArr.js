@@ -46,8 +46,14 @@ import y700_1 from "../assets/Product/Adidas/y700-1.jpg"
 import y700_2 from "../assets/Product/Adidas/y700-2.jpg"
 import y700_3 from "../assets/Product/Adidas/y700-3.jpg"
 
+// Sketchers
+
+import sketchers_flex from '../assets/Product/Sketchers/Skechers_Go_Walk_Flex.jpg'
+import sketchers_glide from '../assets/Product/Sketchers/Skechers_Go_Walk_Glide.jpg'
+import sketchers_arch from '../assets/Product/Sketchers/Skechers_Gowalk_Arch.jpg'
 
 
+// New Balance
 
 
 const productArr = [
@@ -177,33 +183,33 @@ const productArr = [
       description: 'This is beautiful',
       thumbnail: [y700, y700_1, y700_2, y700_3],
     },
-    // {
-    //   id: '',
-    //   name: '',
-    //   imgSrc: '',
-    //   brand: '',
-    //   price: 0,
-    //   description: 'This is beautiful',
-    //   thumbnail: [],
-    // },
-    // {
-    //   id: '',
-    //   name: '',
-    //   imgSrc: '',
-    //   brand: '',
-    //   price: 0,
-    //   description: 'This is beautiful',
-    //   thumbnail: [],
-    // },
-    // {
-    //   id: '',
-    //   name: '',
-    //   imgSrc: '',
-    //   brand: '',
-    //   price: 0,
-    //   description: 'This is beautiful',
-    //   thumbnail: [],
-    // },
+    {
+      id: 'p15',
+      name: 'Sketchers Flex',
+      imgSrc: sketchers_flex,
+      brand: 'sketchers',
+      price: 120,
+      description: 'This is beautiful',
+      thumbnail: [sketchers_arch],
+    },
+    {
+      id: 'p16',
+      name: 'Sketchers Arch',
+      imgSrc: sketchers_arch,
+      brand: 'sketchers',
+      price: 200,
+      description: 'This is beautiful',
+      thumbnail: [sketchers_arch],
+    },
+    {
+      id: 'p17',
+      name: 'Sketchers Glide',
+      imgSrc: sketchers_glide,
+      brand: 'sketchers',
+      price: 180,
+      description: 'This is beautiful',
+      thumbnail: [sketchers_glide],
+    },
     // {
     //   id: '',
     //   name: '',

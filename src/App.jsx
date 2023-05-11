@@ -9,8 +9,9 @@ import Product from "./components/Shop/Product"
 import NikePage from "./Pages/NikePage"
 import AdidasPage from "./Pages/AdidasPage"
 import PumaPage from "./Pages/PumaPage"
-import NewBalancePage from "./Pages/NewBalancePage"
+import Sketchers from "./Pages/Sketchers"
 import ErrorBoundary from "./Pages/ErrorBoundary"
+import ProductDetail from "./Pages/ProductDetail"
 
 const router = createBrowserRouter([
   {
@@ -35,8 +36,12 @@ const router = createBrowserRouter([
         element: <PumaPage />
       },
       {
-        path: 'new_balance',
-        element: <NewBalancePage />
+        path: 'sketchers',
+        element: <Sketchers />
+      },
+      {
+        path: ':productId',
+        element: <ProductDetail />
       }
     ]
   }

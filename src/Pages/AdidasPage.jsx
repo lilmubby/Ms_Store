@@ -15,6 +15,7 @@ const AdidasPage = () => {
         map.map(item => (
           <ProductItem
           key={item.id}
+          id={item.id}
           name={item.name}
           img={item.imgSrc}
           brand={item.brand}
