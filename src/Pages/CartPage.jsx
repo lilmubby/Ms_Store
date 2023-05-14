@@ -1,10 +1,10 @@
 import React from 'react'
-import Cart from '../store/cart'
+import Cart from '../components/Cart/Cart'
 
 const CartPage = () => {
   return (
     <>
-    Cart Page
+    <Cart />
     </>
   )
 }

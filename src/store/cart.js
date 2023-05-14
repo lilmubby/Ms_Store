@@ -5,32 +5,32 @@ const cartSlice = createSlice({
   name: "cart",
   initialState: {
     cartItems: [],
-    totalQuantity: 0
+    totalQuantity: 0,
+    totalPrice: 0
   },
   reducers: {
     addToCart (state, action) {
-      // console.log(action.payload);
+      
       const newItem = action.payload;
       const existingItem = state.cartItems.find((item) => item.id === newItem.id);
       state.totalQuantity++;
+      state.totalPrice += newItem.price;
       if (existingItem) {
-        state.cartItems.push({
-          price: existingItem.price += newItem.price,
-          quantity: existingItem.price += newItem.quantity
-        })
+        
+        existingItem.price += newItem.price
+        existingItem.quantity++
+        
       } else{
         state.cartItems.push({
+          id:newItem.id,
           name: newItem.name,
-          price: newItem.price,
           brand: newItem.brand,
-          id:newItem.id
+          price: newItem.price,
+          img: newItem.img,
+          quantity: newItem.quantity
         });
       }
-
-      
-      console.log(state.cartItems);
-      console.log(newItem);
-    
+      // state.totalPrice = state.cartItems.map(item => item.price).reduce((acc, curr) => acc + curr, 0)
       
     }
   }

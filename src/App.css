@@ -59,6 +59,10 @@ button{
   border: 0;
 }
 
+.cart_img{
+  height: 5em;
+}
+
 .add_to_cart_btn{
   padding: .5rem 1rem;
 }
