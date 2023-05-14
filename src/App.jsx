@@ -1,64 +1,63 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom"
-import './App.css'
-import Footer from './components/Layout/Footer'
-import Header from './components/Layout/Header'
-import Main from './components/Layout/Main'
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import "./App.css";
+// import Footer from './components/Layout/Footer'
+// import Header from './components/Layout/Header'
+// import Main from './components/Layout/Main'
 // import Root from "./Pages/Root"
-import HomePage from "./Pages/HomePage"
-import Product from "./components/Shop/Product"
-import NikePage from "./Pages/NikePage"
-import AdidasPage from "./Pages/AdidasPage"
-import PumaPage from "./Pages/PumaPage"
-import Sketchers from "./Pages/Sketchers"
-import ErrorBoundary from "./Pages/ErrorBoundary"
-import ProductDetail from "./Pages/ProductDetail"
+import HomePage from "./Pages/HomePage";
+import Product from "./components/Shop/Product";
+import NikePage from "./Pages/NikePage";
+import AdidasPage from "./Pages/AdidasPage";
+import PumaPage from "./Pages/PumaPage";
+import Sketchers from "./Pages/SketchersPage";
+import ErrorBoundary from "./Pages/ErrorBoundary";
+import ProductDetail from "./Pages/ProductDetail";
+import CartPage from "./Pages/CartPage";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     errorElement: <ErrorBoundary />,
     element: <HomePage />,
     children: [
       {
-        path: '/',
-        element: <Product />
+        path: "",
+        element: <Product />,
       },
       {
-        path: 'nike',
-        element: <NikePage />
+        path: "nike",
+        element: <NikePage />,
       },
       {
-        path: 'adidas',
-        element: <AdidasPage />
+        path: "adidas",
+        element: <AdidasPage />,
       },
       {
-        path: 'puma',
-        element: <PumaPage />
+        path: "puma",
+        element: <PumaPage />,
       },
       {
-        path: 'sketchers',
-        element: <Sketchers />
+        path: "sketchers",
+        element: <Sketchers />,
       },
       {
-        path: ':productId',
-        element: <ProductDetail />
+        path: ":productId",
+        element: <ProductDetail />,
+      },
+      {
+        path: "cartpage",
+        element: <CartPage />
       }
-    ]
-  }
+    ],
+  },
 ]);
 
 function App() {
-  
-
-
   return (
-    <div className='app'>
-    <RouterProvider router={router} />
-      {/* <Header />
-      <Main />
-      <Footer /> */}
+    <div className="app">
+      <RouterProvider router={router} />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

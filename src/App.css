@@ -42,7 +42,26 @@ ul li div img{
   height: 9em;
   width: 8.5em;
 }
+div .product_detail_img{
+  height: 15rem;
+}
 
+.product_detail_thumbs{
+  height: 3.5em;
+  width: 3.8em;
+}
+
+.product_detail_thumbs_btn{
+  margin-inline: .25rem;
+}
+
+button{
+  border: 0;
+}
+
+.add_to_cart_btn{
+  padding: .5rem 1rem;
+}
 
 .footer_logo{
   height: 6em;

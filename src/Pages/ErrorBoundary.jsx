@@ -28,7 +28,7 @@ const ErrorBoundary = () => {
       <p>
         {message}
       </p>
-      {error.error.message}
+      {/* {error.error.message} */}
     </div>
   )
 }

@@ -10,14 +10,17 @@ const ProductDetail = () => {
   const map = productArr.filter((item) => {
     if (item.id === productId) return item;
   });
-  console.log(map);
+  // console.log(map);
   return (
     <div>
       {map.map((i) => (
         <Detail
+        key={i.id}
           name={i.name}
           description={i.description}
           price={i.description}
+          src={i.thumbnail}
+          id={i.id}
         />
       ))}
     </div>
