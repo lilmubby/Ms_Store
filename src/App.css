@@ -67,6 +67,17 @@ button{
   padding: .5rem 1rem;
 }
 
+.cart_item_btn{
+  background-color: coral;
+  border-radius: .25rem;
+  font-size: 1rem;
+  margin-inline: .5rem;
+  padding: .25em  .75rem;
+}
+.cart_item_btn:hover{
+  cursor: pointer;
+}
+
 .footer_logo{
   height: 6em;
 }

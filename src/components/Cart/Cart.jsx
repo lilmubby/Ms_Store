@@ -13,6 +13,7 @@ const Cart = () => {
         {cartItems.length > 0 &&cartItems.map((item) => (
           <CartItems
             key={item.id}
+            id={item.id}
             name={item.name}
             brand={item.brand}
             price={item.price}
@@ -20,6 +21,7 @@ const Cart = () => {
             img={item.img}
           />
         ))}
+
       </ul>
       <span>Total Quantity: {totalQuantity + " "}</span>
       <span>Sub Total: {totalPrice}</span>
