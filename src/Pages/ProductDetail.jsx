@@ -1,13 +1,17 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-
+import { useSelector } from 'react-redux';
 import productArr from "../store/productArr";
 import Detail from "../components/Detail";
 
 const ProductDetail = () => {
+
   const params = useParams();
+
+  const {productItems} = useSelector(state => state.products);
+
   const productId = params.productId;
-  const map = productArr.filter((item) => {
+  const map = productItems.filter((item) => {
     if (item.id === productId) return item;
   });
   // console.log(map);

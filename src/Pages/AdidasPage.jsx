@@ -1,18 +1,19 @@
-
+import { useSelector } from 'react-redux';
 import ProductItem from '../Shop/ProductItem';
 
-import productArr from '../store/productArr';
+
 
 const AdidasPage = () => {
 
-  const map = productArr.filter(item => {
-    if (item.brand === 'Adidas') return item
-  });
+  const {productItems} = useSelector(state => state.products);
+  
 
   return (
     <ul>
       {
-        map.map(item => (
+        productItems.filter(item => {
+          if (item.brand === 'Adidas') return item
+        }).map(item => (
           <ProductItem
           key={item.id}
           id={item.id}

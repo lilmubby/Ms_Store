@@ -2,11 +2,6 @@ import React, { useState } from "react";
 
 const DetailPics = (props) => {
   const [imgIndex, setImgIndex] = useState(0);
-  // console.log(props.src);
-
-  // const imgHandler = () => {
-    
-  // }
 
   return (
     <div>

@@ -1,12 +1,12 @@
-import React from 'react'
-
+import { useSelector } from 'react-redux';
 import ProductItem from '../Shop/ProductItem';
 
-import productArr from '../store/productArr';
 
 const NewBalancePage = () => {
 
-  const map = productArr.filter(item => {
+  const { productItems } = useSelector(state => state.products);
+
+  const map = productItems.filter(item => {
     if (item.brand === 'sketchers') return item
   });
 

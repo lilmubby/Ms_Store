@@ -1,12 +1,13 @@
 // import React , { useState } from 'react'
-
+import { useSelector } from 'react-redux';
 import ProductItem from "../Shop/ProductItem";
-import productArr from "../store/productArr";
+
 
 const NikePage = () => {
   // const [items, setItems] = useState(productArr);
+  const {productItems} = useSelector(state => state.products);
 
-  const map = productArr.filter(item => {
+  const map = productItems.filter(item => {
     if (item.brand === 'Nike') return item
   });
 

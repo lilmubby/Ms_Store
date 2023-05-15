@@ -1,5 +1,4 @@
 import React from 'react'
-import productArr from '../store/productArr'
 import { useDispatch } from 'react-redux'
 import { addToCart } from '../store/cart'
 
@@ -9,7 +8,7 @@ const DetailText = (props) => {
   const { id, name, description, price, img, brand } = props
 
   const addToCartHandler = () => {
-    console.log(productArr);
+    
     dispatch(addToCart(
       {
         id,
