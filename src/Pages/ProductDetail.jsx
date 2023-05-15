@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 
 import productArr from "../store/productArr";
-import Detail from "../Detail/Detail";
+import Detail from "../components/Detail";
 
 const ProductDetail = () => {
   const params = useParams();
@@ -18,9 +18,10 @@ const ProductDetail = () => {
         key={i.id}
           name={i.name}
           description={i.description}
-          price={i.description}
+          price={i.price}
           src={i.thumbnail}
           id={i.id}
+          brand={i.brand}
         />
       ))}
     </div>

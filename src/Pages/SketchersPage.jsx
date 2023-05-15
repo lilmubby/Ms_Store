@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ProductItem from '../components/Shop/ProductItem';
+import ProductItem from '../Shop/ProductItem';
 
 import productArr from '../store/productArr';
 

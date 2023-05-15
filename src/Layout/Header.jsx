@@ -1,9 +1,9 @@
 import React from "react";
-import SearchBox from "../Headers/SearchBox";
-import UtilityNav from "../Headers/UtilityNav";
-import Navigation from "../Headers/Navigation";
+import SearchBox from "../components/SearchBox";
+import UtilityNav from "../components/UtilityNav";
+import Navigation from "../components/Navigation";
 
-import logo from "../../assets/logo.png";
+import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 
 const Header = () => {

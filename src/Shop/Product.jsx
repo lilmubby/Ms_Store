@@ -1,5 +1,5 @@
 import ProductItem from "./ProductItem";
-import productArr from "../../store/productArr";
+import productArr from "../store/productArr";
 
 //
 

@@ -5,7 +5,7 @@ import "./App.css";
 // import Main from './components/Layout/Main'
 // import Root from "./Pages/Root"
 import HomePage from "./Pages/HomePage";
-import Product from "./components/Shop/Product";
+import Product from "./Shop/Product";
 import NikePage from "./Pages/NikePage";
 import AdidasPage from "./Pages/AdidasPage";
 import PumaPage from "./Pages/PumaPage";

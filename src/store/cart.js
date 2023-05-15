@@ -35,15 +35,19 @@ const cartSlice = createSlice({
       
     },
     removeFromCart(state, action) {
-      const id = action.payload;
+      const id = action.payload; //stores id of the item to be removed 
+      // checks if the item is in the cart using the item id
       const existingItem = state.cartItems.find((item) => item.id === id)
       
       if (existingItem.quantity === 1) {
+        //removes the item from the cart if it quantity is less than 1
         state.cartItems = state.cartItems.filter(item => item.id !== id);
       }
-      
+      //reduces the total quantity by 1
       state.totalQuantity--
+      // reduces the item's quantity by 1
       existingItem.quantity--
+      // reduces the cart total price by the item's price
       state.totalPrice -= existingItem.price
       
     },

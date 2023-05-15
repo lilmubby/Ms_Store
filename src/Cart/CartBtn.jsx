@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { addToCart, removeFromCart } from '../../store/cart'
+import { addToCart, removeFromCart } from '../store/cart'
 
 
 const CartBtn = (props) => {
