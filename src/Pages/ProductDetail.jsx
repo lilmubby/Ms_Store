@@ -11,13 +11,14 @@ const ProductDetail = () => {
   const {productItems} = useSelector(state => state.products);
 
   const productId = params.productId;
-  const map = productItems.filter((item) => {
-    if (item.id === productId) return item;
-  });
-  // console.log(map);
+
+  // console.log();
   return (
     <div>
-      {map.map((i) => (
+      {
+      productItems.filter((item) => {
+        if (item.id === productId) return item;
+      }).map((i) => (
         <Detail
         key={i.id}
           name={i.name}

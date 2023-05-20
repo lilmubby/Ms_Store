@@ -6,12 +6,17 @@ import { useSelector } from "react-redux";
 
 const Product = () => {
 
-  const {productItems} = useSelector(state => state.products);
+  const {productItems, searchQuery} = useSelector(state => state.products);
 
       
   return (
     <ul>
-      {productItems.map((item) => (
+      {productItems.filter(items => {
+        
+        return items.brand.toLowerCase().includes(searchQuery.toLowerCase())
+        
+      })
+      .map((item) => (
         <ProductItem
           key={item.id}
           id={item.id}

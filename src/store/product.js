@@ -4,14 +4,15 @@ import productArr from "./productArr";
 const productSlice = createSlice({
   name: "product",
   initialState: {
-    productItems: productArr
+    productItems: productArr, 
+    searchQuery: ''
   },
   reducers: {
-    nothing(state) {
-
+    searchItem(state, action) {
+      state.searchQuery = action.payload;
     }
   }
 })
 
 export default productSlice.reducer
-export const {nothing} = productSlice.actions;
+export const {searchItem} = productSlice.actions;

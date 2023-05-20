@@ -7,15 +7,12 @@ const NikePage = () => {
   // const [items, setItems] = useState(productArr);
   const {productItems} = useSelector(state => state.products);
 
-  const map = productItems.filter(item => {
-    if (item.brand === 'Nike') return item
-  });
-
-
   return (
     <ul>
       {
-        map.map(item => (
+        productItems.filter(item => {
+          if (item.brand === 'Nike') return item
+        }).map(item => (
           <ProductItem
           key={item.id}
           id={item.id}
