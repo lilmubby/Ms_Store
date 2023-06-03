@@ -8,13 +8,13 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header>
+    <header className="flex items-center justify-around w-[85vw] mx-auto">
       <Link to={``}>
         <img src={logo} alt="Logo" className="pry_logo" />
       </Link>
       <Navigation />
-      <UtilityNav />
       <SearchBox />
+      <UtilityNav />
     </header>
   );
 };
